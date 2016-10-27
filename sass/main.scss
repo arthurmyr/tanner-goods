@@ -1,3 +1,14 @@
+@mixin hr($length, $thickness, $color) {
+  width: $length;
+  height: $thickness;
+  background-color: $color;
+}
+@mixin vr($length, $thickness, $color) {
+  height: $length;
+  width: $thickness;
+  background-color: $color;
+}
+
 html, body {
   width: 100%;
 }
@@ -24,6 +35,24 @@ li a {
   font-size: 13.431px;
   text-transform: uppercase;
 }
+li {
+  position: relative;
+}
+li .hr {
+  position: absolute;
+  left: -45px;
+  top: 8px;
+  @include hr(32px, 1px, #b8a47e);
+}
+li .round {
+  position: absolute;
+  top: 8px;
+  right: -10px;
+  background-color: #b8a47e;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%
+}
 .big-img-left {
   width: 65%;
   float: left;
@@ -34,16 +63,6 @@ li a {
 }
 .clear {
   clear: both;
-}
-@mixin hr($length, $thickness, $color) {
-  width: $length;
-  height: $thickness;
-  background-color: $color;
-}
-@mixin vr($length, $thickness, $color) {
-  height: $length;
-  width: $thickness;
-  background-color: $color;
 }
 
 
@@ -128,7 +147,7 @@ header {
 }
 
 #section-1 {
-  height: 5484px;
+  height: 1930px;
   #presentation {
     .pic { 
       @extend .big-img-right;
@@ -209,15 +228,23 @@ header {
       }
     }
   }
+  .swiper-container {
+    margin-top: 200px;
+    width: 96.5%;
+    height: 475px;
+  }
+  .swipper-slide {
+    text-align: center;
+  }
 }
 
 #section-2 {
-  height: 1336px;
+  height: 1335px;
   background-color: #ededed;
 }
 
 #section-3 {
-  height: 5484px;
+  height: 2040px;
   background-color: #fff;
 }
 

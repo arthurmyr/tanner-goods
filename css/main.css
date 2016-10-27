@@ -1,14 +1,14 @@
-/* line 1, ../sass/main.scss */
+/* line 12, ../sass/main.scss */
 html, body {
   width: 100%;
 }
 
-/* line 4, ../sass/main.scss */
+/* line 15, ../sass/main.scss */
 a, p, i, h2, h3 {
   font-family: 'Montserrat';
 }
 
-/* line 7, ../sass/main.scss */
+/* line 18, ../sass/main.scss */
 h2 {
   text-transform: uppercase;
   font-size: 40px;
@@ -18,71 +18,97 @@ h2 {
   margin-bottom: 18px;
 }
 
-/* line 15, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 a {
   text-decoration: none;
   color: black;
 }
 
-/* line 19, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
 li {
   display: inline-block;
 }
 
-/* line 22, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 li a {
   font-family: 'Muller Extra_Bold', sans-serif;
   font-size: 13.431px;
   text-transform: uppercase;
 }
 
-/* line 27, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
+li {
+  position: relative;
+}
+
+/* line 41, ../sass/main.scss */
+li .hr {
+  position: absolute;
+  left: -45px;
+  top: 8px;
+  width: 32px;
+  height: 1px;
+  background-color: #b8a47e;
+}
+
+/* line 47, ../sass/main.scss */
+li .round {
+  position: absolute;
+  top: 8px;
+  right: -10px;
+  background-color: #b8a47e;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+/* line 56, ../sass/main.scss */
 .big-img-left, #section-1 #voyager-daypack .pic {
   width: 65%;
   float: left;
 }
 
-/* line 31, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 .big-img-right, #section-1 #presentation .pic {
   width: 65%;
   float: right;
 }
 
-/* line 35, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 .clear {
   clear: both;
 }
 
-/* line 51, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 header {
   z-index: 1;
   position: absolute;
   width: 100%;
 }
-/* line 55, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 header #logo {
   width: 11.5%;
   display: inline-block;
   margin-left: 10px;
   margin-right: 118px;
 }
-/* line 61, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 header ul {
   display: inline-block;
   position: absolute;
   top: 40%;
   right: 33.5%;
 }
-/* line 66, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 header ul li {
   margin-right: 75px;
 }
-/* line 69, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 header ul li:nth-child(3) a, header ul li:nth-child(4) a, header ul li:nth-child(5) a {
   color: white;
 }
 
-/* line 75, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 #fixed-nav {
   z-index: 3;
   position: fixed;
@@ -95,21 +121,21 @@ header ul li:nth-child(3) a, header ul li:nth-child(4) a, header ul li:nth-child
   background-color: #fff;
   border-radius: 50%;
 }
-/* line 86, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 #fixed-nav img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 91, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 #fixed-nav img:nth-child(1) {
   margin-bottom: 29px;
 }
-/* line 94, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 #fixed-nav img:nth-child(2) {
   margin-bottom: 10px;
 }
-/* line 97, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 #fixed-nav div[class="vr"] {
   height: 32px;
   width: 1px;
@@ -118,21 +144,21 @@ header ul li:nth-child(3) a, header ul li:nth-child(4) a, header ul li:nth-child
   margin-right: auto;
   margin-bottom: 27px;
 }
-/* line 103, ../sass/main.scss */
+/* line 122, ../sass/main.scss */
 #fixed-nav span {
   display: block;
   width: 100%;
   text-align: center;
   margin-bottom: 14px;
 }
-/* line 109, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 #fixed-nav span a {
   font-family: 'Montserrat';
   font-weight: bold;
   font-size: 14px;
   color: #878787;
 }
-/* line 115, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 #fixed-nav .active-anchor {
   display: block;
   margin-left: auto;
@@ -147,30 +173,30 @@ header ul li:nth-child(3) a, header ul li:nth-child(4) a, header ul li:nth-child
   box-shadow: 5px 5px 30px 5px #dbdddf;
 }
 
-/* line 130, ../sass/main.scss */
+/* line 149, ../sass/main.scss */
 #section-1 {
-  height: 5484px;
+  height: 1930px;
 }
-/* line 133, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 #section-1 #presentation .pic {
   margin-bottom: 160px;
 }
-/* line 137, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 #section-1 #presentation .text-container {
   position: absolute;
   top: 265px;
   right: 42.5%;
 }
-/* line 138, ../sass/main.scss */
+/* line 157, ../sass/main.scss */
 #section-1 #presentation .text-container h2, #section-1 #presentation .text-container p {
   color: #292929;
 }
-/* line 144, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 #section-1 #presentation .text-container a {
   color: #baa782;
   padding-left: 1%;
 }
-/* line 145, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 #section-1 #presentation .text-container a .hr {
   display: inline-block;
   width: 30px;
@@ -179,11 +205,11 @@ header ul li:nth-child(3) a, header ul li:nth-child(4) a, header ul li:nth-child
   margin-bottom: 4.5px;
   margin-right: 10px;
 }
-/* line 156, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 #section-1 #voyager-daypack {
   position: relative;
 }
-/* line 161, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 #section-1 #voyager-daypack .text-container {
   position: absolute;
   left: 43%;
@@ -192,13 +218,13 @@ header ul li:nth-child(3) a, header ul li:nth-child(4) a, header ul li:nth-child
   height: 55%;
   border: 2px solid #baa782;
 }
-/* line 168, ../sass/main.scss */
+/* line 187, ../sass/main.scss */
 #section-1 #voyager-daypack .text-container h2 {
   position: absolute;
   top: 20%;
   left: -33%;
 }
-/* line 173, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 #section-1 #voyager-daypack .text-container i {
   text-transform: uppercase;
   font-size: 17px;
@@ -206,7 +232,7 @@ header ul li:nth-child(3) a, header ul li:nth-child(4) a, header ul li:nth-child
   top: 48%;
   left: 19%;
 }
-/* line 180, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 #section-1 #voyager-daypack .text-container p {
   width: 39%;
   height: 65.5%;
@@ -220,11 +246,11 @@ header ul li:nth-child(3) a, header ul li:nth-child(4) a, header ul li:nth-child
   color: #a7a7a7;
   float: right;
 }
-/* line 193, ../sass/main.scss */
+/* line 212, ../sass/main.scss */
 #section-1 #voyager-daypack .text-container h2, #section-1 #voyager-daypack .text-container i {
   color: #fff;
 }
-/* line 196, ../sass/main.scss */
+/* line 215, ../sass/main.scss */
 #section-1 #voyager-daypack .text-container .go-down {
   position: absolute;
   bottom: -29%;
@@ -233,27 +259,37 @@ header ul li:nth-child(3) a, header ul li:nth-child(4) a, header ul li:nth-child
   width: 20%;
   height: 75px;
 }
-/* line 203, ../sass/main.scss */
+/* line 222, ../sass/main.scss */
 #section-1 #voyager-daypack .text-container .go-down img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
 }
+/* line 231, ../sass/main.scss */
+#section-1 .swiper-container {
+  margin-top: 200px;
+  width: 96.5%;
+  height: 475px;
+}
+/* line 236, ../sass/main.scss */
+#section-1 .swipper-slide {
+  text-align: center;
+}
 
-/* line 214, ../sass/main.scss */
+/* line 241, ../sass/main.scss */
 #section-2 {
-  height: 1336px;
+  height: 1335px;
   background-color: #ededed;
 }
 
-/* line 219, ../sass/main.scss */
+/* line 246, ../sass/main.scss */
 #section-3 {
-  height: 5484px;
+  height: 2040px;
   background-color: #fff;
 }
 
-/* line 224, ../sass/main.scss */
+/* line 251, ../sass/main.scss */
 footer {
   background-color: #ededed;
   height: 185px;
