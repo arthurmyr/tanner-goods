@@ -1,0 +1,227 @@
+html, body {
+  width: 100%;
+}
+a, p, i, h2, h3 {
+  font-family: 'Montserrat';
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 9px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+      display: inline-block;
+}
+li a {
+  font-family: 'Muller Extra_Bold', sans-serif;
+  font-size: 13.431px;
+  text-transform: uppercase;
+}
+.big-img-left {
+  width: 65%;
+  float: left;
+}
+.big-img-right {
+  width: 65%;
+  float: right;
+}
+.clear {
+  clear: both;
+}
+@mixin hr($length, $thickness, $color) {
+  width: $length;
+  height: $thickness;
+  background-color: $color;
+}
+@mixin vr($length, $thickness, $color) {
+  height: $length;
+  width: $thickness;
+  background-color: $color;
+}
+
+
+
+header {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  #logo {
+    width: 11.5%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 118px;
+  }
+  ul {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    right: 33.5%;
+    li {
+      margin-right: 75px; 
+    }
+    li:nth-child(3) a, li:nth-child(4) a, li:nth-child(5) a {
+      color: white;
+    }
+  }  
+}
+
+#fixed-nav {
+  z-index: 3;
+  position: fixed;
+  top: 160px;
+  left: 50px;
+  height: 330px;
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img:nth-child(1) {
+    margin-bottom: 29px;
+  }
+  img:nth-child(2) {
+    margin-bottom: 10px;
+  }
+  div[class="vr"] {
+    @include vr(32px, 1px, #b8a47e);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 27px;
+  }
+  span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  span a {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(135, 135, 135);
+  }
+  .active-anchor {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 65px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    color: #000;
+    font-size: 33px;
+    font-weight: normal;
+    box-shadow: 5px 5px 30px 5px #dbdddf;
+  }
+}
+
+#section-1 {
+  height: 5484px;
+  #presentation {
+    .pic { 
+      @extend .big-img-right;
+      margin-bottom: 160px;
+    }
+    .text-container {
+      h2, p {
+        color: #292929;
+      }
+    position: absolute;
+    top: 265px;
+    right: 42.5%;
+      a {
+        .hr {
+          display: inline-block;
+          @include hr(30px,1px, #baa782);
+          margin-bottom: 4.5px;
+          margin-right: 10px;
+        }
+        color: #baa782;
+        padding-left: 1%;
+      }
+    }
+  }
+  #voyager-daypack {
+    position:relative;
+    .pic {
+      @extend .big-img-left;
+    }
+    .text-container {
+      position: absolute;
+      left: 43%;
+      top: 21%;
+      width: 45%;
+      height: 55%;
+      border: 2px solid #baa782;
+      h2 {
+        position: absolute;
+        top: 20%;
+        left: -33%;
+      }
+      i {
+        text-transform: uppercase;
+        font-size: 17px;
+        position: absolute;
+        top: 48%;
+        left: 19%;
+      }
+      p {
+        width: 39%;
+        height: 65.5%;
+        padding-top: 6%;
+        padding-bottom: 6%;
+        padding-left: 6%;
+        padding-right: 6%;
+        font-size: 12px;
+        line-height: 33px;
+        word-spacing: 3px;
+        color: #a7a7a7;
+        float: right;
+      }
+      h2, i {
+        color: #fff;
+      }
+      .go-down {
+        position: absolute;
+        bottom: -29%;
+        right: 18%;
+        background-color: #fff;
+        width: 20%;
+        height: 75px;
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+#section-2 {
+  height: 1336px;
+  background-color: #ededed;
+}
+
+#section-3 {
+  height: 5484px;
+  background-color: #fff;
+}
+
+footer {
+  background-color: #ededed;
+  height: 185px;
+}
